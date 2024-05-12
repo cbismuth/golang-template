@@ -30,7 +30,7 @@ log "Formatting and lint Bazel files ..."
 bazelisk run //:buildifier
 
 log "Installing goimports utility ..."
-go install golang.org/x/tools/cmd/goimports@latest
+go install golang.org/x/tools/cmd/goimports@latest && which goimports
 
 log "Formatting Go files ..."
 goimports -l -w .
