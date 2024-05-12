@@ -37,7 +37,7 @@ func (suite *MainTestSuite) TearDownTest() {
 	fmt.Println("Tear down test")
 }
 
-func (suite *MainTestSuite) TestSwap() {
+func (suite *MainTestSuite) TestGen() {
 	const n = 1<<63 - 1
 
 	x := suite.gen.Intn(n)
